@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        
+        //document.addEventListener('DOMContentLoaded', function () {
+
+        //    //Recuperation d'une div
+        //    var div = document.querySelector("div");
+        //    //div.innerText = "<strong>Hello javascript !!</strong>";
+        //    div.innerHTML = "<strong>Hello c# !!</strong>";
+        //    div.id = "myDiv";
+        //    console.log(div);
+        //});
+
+        document.addEventListener("DOMContentLoaded", onDOMLoaded);
+
+        function onDOMLoaded() {
+            var divs = document.getElementsByTagName("div");
+            divs[0].innerText = "Named function";
+            divs[0].style.backgroundColor = "rgb(63, 239, 255)";
+            divs[0].style.transform = "rotate(45deg) translateY(300px) scale(0.5)";
+            console.log(this);
+            var that = this;
+            document.querySelector('button').addEventListener("click", (event) =>{
+                console.log(event);
+            });
+           
+            function myFunc(valeur, callback) {
+                //"use strict";
+                //debugger
+
+                //console.log(arguments);
+                //if (callback.caller.length > 0)
+                    
+                //    callback(valeur);
+                //else
+                //    callback();
+            }
+
+            myFunc(100, (x) => { console.log(x * 2); });
+            myFunc(100, (x) => {
+                console.log("Suppppper on additionne");
+                console.log(x + 300);
+            })
+
+            function test() {
+                if (arguments.length > 0)
+                    console.log(arguments[arguments.length - 1]);
+            }
+
+            test();
+            test(1000)
+
+
+            function direBonjour() {
+                if (arguments[0] != undefined) {
+                    console.log(arguments[0]);
+                }
+                else {
+                    console.log("Hello");
+                }
+            }
+
+            direBonjour();
+            direBonjour("Bonjour a  moi meme");
+
+        }
+        
+
+        
+
+
+    </script>
+</head>
+<body>
+    <div></div>
+    <button onclick=""></button>
+</body>
+</html>

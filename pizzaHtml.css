@@ -1,0 +1,91 @@
+﻿body {
+    background: black;
+    color: white;
+}
+
+section {
+    margin: auto;
+    width: 80%;
+}
+
+
+aside > img:first-child {
+    max-width: 100%;
+}
+
+/*******************Menu**********************/
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+    header nav ul li {
+        display: inline-block;
+        width: 130px;
+        vertical-align: top;
+        height: 68px;
+        text-align: center;
+        padding: 5px;
+    }
+
+        header nav ul li:not(:last-child) {
+            border-right: 1px solid white;
+        }
+
+
+        header nav ul li a {
+            color: white;
+            text-transform: uppercase;
+            font-size: 1.25rem;
+            text-decoration: none;
+        }
+
+        header nav ul li:after {
+            *content: "|";
+        }
+
+nav {
+    display: inline-block;
+}
+
+
+.commande {
+    line-height: 80px;
+    text-align: center;
+    height: 80px;
+    background: white;
+    margin: 20px;
+    vertical-align: middle;
+}
+
+header div.left {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.commande span {
+    color: black;
+    font-size: 1.5rem;
+}
+
+/*************Card***************/
+.card {
+    display: inline-block;
+    width: calc(50% - 23px);
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.30);
+    text-align:justify;
+    margin:5px;
+}
+
+.card button{
+    display:none;
+}
+    .card img {
+        width: 100%;
+    }
+
+article {
+    background-image: url(https://www.dominos.fr//Content/Images/bg-tiled.jpg)
+}

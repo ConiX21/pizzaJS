@@ -1,0 +1,23 @@
+﻿[
+  {
+    "name": "Reine",
+    "description": "Jambon, champignon, fromage",
+    "priceHT": 10,
+    "image": "dotnet_pizza_home.jpg",
+    "id": 0
+  },
+  {
+    "name": "Saumon",
+    "description": "Jambon, champignon, fromage, saumon",
+    "priceHT": 12.5,
+    "image": "dotnet_pizza_home_2.jpg",
+    "id": 1
+  },
+  {
+    "name": "Kebab",
+    "description": "Mouton, champignon, fromage",
+    "priceHT": 13,
+    "image": "dotnet_pizza_home_4.jpg",
+    "id": 2
+  }
+]
